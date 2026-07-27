@@ -2,26 +2,62 @@
 
 # DevOps Node.js Application
 
-A simple Node.js application demonstrating modern DevOps practices using Docker, Kubernetes, and GitHub Actions.
-# DevOps Node.js Application
+A production-style DevOps portfolio project demonstrating containerization, orchestration, and continuous integration using Docker, Kubernetes, and GitHub Actions.
 
-A simple Node.js application demonstrating modern DevOps practices using Docker, Kubernetes, and GitHub Actions.
+---
+
+## Architecture
+
+```text
+                Developer
+                    │
+                    ▼
+          GitHub Repository
+                    │
+                    ▼
+        GitHub Actions (CI/CD)
+                    │
+                    ▼
+          Docker Image Build
+                    │
+                    ▼
+      Kubernetes Deployment
+                    │
+                    ▼
+         Node.js Application
+```
 
 ---
 
 ## Technologies
 
-- Node.js
-- Docker
-- Kubernetes (Minikube)
-- GitHub Actions
-- Git
+| Technology | Purpose |
+|------------|---------|
+| Node.js | Web application |
+| Docker | Containerization |
+| Kubernetes | Container orchestration |
+| GitHub Actions | Continuous Integration |
+| Git | Version Control |
+
+---
+
+## Skills Demonstrated
+
+- Docker image creation
+- Docker container management
+- Kubernetes Deployments
+- Kubernetes Services
+- Kubernetes Scaling
+- GitHub Actions CI/CD
+- Git version control
+- YAML configuration
+- Node.js application deployment
 
 ---
 
 ## Project Structure
 
-```
+```text
 01-docker-node-app
 │
 ├── .github/
@@ -41,19 +77,19 @@ A simple Node.js application demonstrating modern DevOps practices using Docker,
 
 ## Run Locally
 
-Install dependencies:
+Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the application:
+Start the application
 
 ```bash
 npm start
 ```
 
-Open:
+Open
 
 ```
 http://localhost:3000
@@ -61,13 +97,15 @@ http://localhost:3000
 
 ---
 
-## Build Docker Image
+## Docker
+
+Build
 
 ```bash
 docker build -t devops-node-app:v1 .
 ```
 
-Run:
+Run
 
 ```bash
 docker run -p 3000:3000 devops-node-app:v1
@@ -75,14 +113,16 @@ docker run -p 3000:3000 devops-node-app:v1
 
 ---
 
-## Deploy to Kubernetes
+## Kubernetes
+
+Deploy
 
 ```bash
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
 ```
 
-View resources:
+Verify
 
 ```bash
 kubectl get deployments
@@ -97,11 +137,23 @@ kubectl get pods
 GitHub Actions automatically:
 
 - Checks out the repository
-- Installs dependencies
+- Installs Node.js
+- Installs project dependencies
 - Builds the Docker image
+
+---
+
+## Future Improvements
+
+- Automated testing
+- Docker image publishing
+- Terraform infrastructure
+- AWS deployment
+- Prometheus monitoring
+- Grafana dashboards
 
 ---
 
 ## Author
 
-Ismet Xani
+**Ismet Xani**
