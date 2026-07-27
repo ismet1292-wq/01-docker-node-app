@@ -1,3 +1,8 @@
+[![Node.js CI](https://github.com/ismet1292-wq/01-docker-node-app/actions/workflows/nodejs.yml/badge.svg)](https://github.com/ismet1292-wq/01-docker-node-app/actions/workflows/nodejs.yml)
+
+# DevOps Node.js Application
+
+A simple Node.js application demonstrating modern DevOps practices using Docker, Kubernetes, and GitHub Actions.
 # DevOps Node.js Application
 
 A simple Node.js application demonstrating modern DevOps practices using Docker, Kubernetes, and GitHub Actions.
