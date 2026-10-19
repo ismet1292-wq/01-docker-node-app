@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check published runtime dependency advisories
+        run: npm audit --omit=dev --audit-level=moderate
+
       - name: Test HTTP behavior
         run: npm test
 
